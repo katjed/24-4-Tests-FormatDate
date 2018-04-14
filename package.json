@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha index.test.js",
-    "test:watch": "mocha -w index.test.js"
+    "test:watch": "onchange  \"./*.js\" -- npm test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "mocha": "^5.1.0"
-  }
+    "mocha": "^5.1.0",
+    "onchange": "^3.3.0"
+  },
+  "dependencies": {}
 }
